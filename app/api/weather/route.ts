@@ -32,7 +32,6 @@ export async function GET(request: Request) {
       return NextResponse.json(data);
     }
 
-    // fallback mock if no key
     const mockData: WeatherResponse = {
       city,
       tempC: 26.5,
